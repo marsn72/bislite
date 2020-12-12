@@ -49,6 +49,8 @@ function browserSync() {
     server: {
       baseDir: './' + project_folder + '/',
     },
+    //tunnel: true,
+    online: true,
     port: 4000,
     notify: false
   });
