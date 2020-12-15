@@ -314,7 +314,7 @@ a {
   &__link {
     position: relative;
     padding-left: 15px;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 13px;
     color: #2aacc8;
     &::before{
@@ -330,6 +330,83 @@ a {
   }
 }
 
-
+//<works-slider>====================================================================
+.works {
+  &__title {
+    position: relative;
+    padding: 25px 0px 15px 40px;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &::before{
+      content: '';
+      display: block;
+      width: 14px;
+      height: 24px;
+      background: url(../img/icons/cursor.svg) 0 0 no-repeat;
+      position: absolute;
+      top: 20px;
+      left: 0;
+    }
+  }
+  &__inner {
+    padding: 20px 0px 40px 0px;
+    border-top: 1px solid #dfe1e5;
+    border-bottom: 1px solid #dfe1e5;
+  }
+  &__inner-item {
+    text-align: center;
+  }
+  &__inner-box{
+    position: relative;
+    display: inline-block;
+    &:hover .works__inner-link{
+      height: 80px;
+    }
+  }
+  &__inner-link{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    background-color: #2aacc8;
+    overflow: hidden;
+    transition: all .3s ease;
+    a{
+      margin: 0px 15px;
+    }
+  }
+}
+.slick-arrow{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #81e4ed;
+  &::before{
+    display: none;
+  }
+  &:hover, &:focus{
+    background-color: #81e4d4;
+  }
+}
+.slick-next{
+ top: -27px;
+ right: 0; 
+}
+.slick-prev{
+ top: -27px;
+ right: 31px; 
+ left: auto;
+}
+.slick-list{
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+}
+//</works-slider>====================================================================
 
 
