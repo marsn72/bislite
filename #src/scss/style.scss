@@ -407,6 +407,97 @@ a {
   margin-right: -15px;
   overflow: hidden;
 }
-//</works-slider>====================================================================
+//</works-slider>===================================================================
+//**********************************************************************************
+//<clients-sector>==================================================================
+.clients { 
+  padding: 0px 0px 40px 0px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.testimonials {
+  max-width: 440px;
+  &__title {
+    @extend .works__title;
+    &::before{
+      width: 24px;
+      height: 23px;
+      background: url(../img/icons/comments.svg) 0 0 no-repeat;
+    }
+  }
+  p{
+    font-size: 14px;
+    font-family: "Arial";
+    color:#363636;
+    line-height: 24px;
+  }
+  span{
+    display: block;
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: "Arial";
+    color:#363636;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+.clients-logo {
+  &__title {
+    @extend .works__title;
+    &::before{
+      width: 24px;
+      height: 21px;
+      background: url(../img/icons/clients.svg) 0 0 no-repeat;
+    }
+  }
+  &__images {
+  }
+}
+.download {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 30px 40px 30px 30px;
+  border: 1px solid #81e4ed;
+  background-color: #e8fcfe;
+  &__text {
+    max-width: 620px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    line-height: 26px;
+    color: #363636;
+  }
+}
+.download {
+  &__btn {
+    a{
+      position: relative;
+      padding: 20px 20px 20px 70px;
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #0d0707;
+      text-transform: uppercase;
+      border: solid 1px rgb(42, 172, 200);
+      border-radius: 8px;
+      background: linear-gradient( to top, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%);
+      box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+      &::before{
+        content: '';
+        position: absolute;
+        left: 19px;
+        top: 16px;
+        width: 28px;
+        height: 25px;
+        background: url('../img/icons/download.svg') 0 0 no-repeat;
+      }
+    }
+  }
+}
+//</clients-sector>==================================================================
 
 
